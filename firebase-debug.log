@@ -1,0 +1,72 @@
+[debug] [2021-02-27T11:17:04.446Z] ----------------------------------------------------------------------
+[debug] [2021-02-27T11:17:04.448Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Bhavik Arora\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-02-27T11:17:04.449Z] CLI Version:   9.5.0
+[debug] [2021-02-27T11:17:04.449Z] Platform:      win32
+[debug] [2021-02-27T11:17:04.449Z] Node Version:  v12.19.0
+[debug] [2021-02-27T11:17:04.450Z] Time:          Sat Feb 27 2021 16:47:04 GMT+0530 (India Standard Time)
+[debug] [2021-02-27T11:17:04.450Z] ----------------------------------------------------------------------
+[debug] [2021-02-27T11:17:04.450Z] 
+[debug] [2021-02-27T11:17:04.458Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-27T11:17:04.459Z] > authorizing via signed-in user
+[debug] [2021-02-27T11:17:04.459Z] [iam] checking project divine-shiksha for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-27T11:17:04.462Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-27T11:17:04.462Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-27T11:17:04.720Z] <<< HTTP RESPONSE 200 {"date":"Sat, 27 Feb 2021 11:17:03 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-27T11:17:04.752Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/divine-shiksha:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-27T11:17:06.105Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 27 Feb 2021 11:17:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1137","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-27T11:17:06.109Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/divine-shiksha/serviceAccounts/divine-shiksha@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2021-02-27T11:17:07.836Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 27 Feb 2021 11:17:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-27T11:17:07.841Z] > refreshing access token with scopes: []
+[debug] [2021-02-27T11:17:07.842Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-27T11:17:08.068Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sat, 27 Feb 2021 11:17:06 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-27T11:17:08.086Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/divine-shiksha [none]
+[debug] [2021-02-27T11:17:08.521Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/divine-shiksha 200
+[debug] [2021-02-27T11:17:08.522Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/divine-shiksha {"projectId":"divine-shiksha","projectNumber":"82223462009","displayName":"divine-shiksha","name":"projects/divine-shiksha","resources":{"hostingSite":"divine-shiksha"},"state":"ACTIVE"}
+[debug] [2021-02-27T11:17:08.763Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:120:11)
+    at Object.join (path.js:375:7)
+    at Object.checkFunctionsSDKVersion [as fn] (C:\Users\Bhavik Arora\AppData\Roaming\npm\node_modules\firebase-tools\lib\checkFirebaseSDKVersion.js:34:28)
+    at C:\Users\Bhavik Arora\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-02-27T11:17:40.249Z] ----------------------------------------------------------------------
+[debug] [2021-02-27T11:17:40.252Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Bhavik Arora\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-02-27T11:17:40.252Z] CLI Version:   9.5.0
+[debug] [2021-02-27T11:17:40.252Z] Platform:      win32
+[debug] [2021-02-27T11:17:40.252Z] Node Version:  v12.19.0
+[debug] [2021-02-27T11:17:40.254Z] Time:          Sat Feb 27 2021 16:47:40 GMT+0530 (India Standard Time)
+[debug] [2021-02-27T11:17:40.254Z] ----------------------------------------------------------------------
+[debug] [2021-02-27T11:17:40.254Z] 
+[debug] [2021-02-27T11:17:40.266Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-27T11:17:40.267Z] > authorizing via signed-in user
+[debug] [2021-02-27T11:17:40.268Z] [iam] checking project divine-shiksha for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-02-27T11:17:40.273Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-27T11:17:40.273Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-27T11:17:40.594Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 27 Feb 2021 11:17:39 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-27T11:17:40.606Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/divine-shiksha:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-02-27T11:17:42.047Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 27 Feb 2021 11:17:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1218","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-27T11:17:42.050Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/divine-shiksha/serviceAccounts/divine-shiksha@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2021-02-27T11:17:43.758Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 27 Feb 2021 11:17:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-27T11:17:43.764Z] > refreshing access token with scopes: []
+[debug] [2021-02-27T11:17:43.764Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-27T11:17:43.982Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sat, 27 Feb 2021 11:17:42 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-27T11:17:44.002Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/divine-shiksha [none]
+[debug] [2021-02-27T11:17:44.527Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/divine-shiksha 200
+[debug] [2021-02-27T11:17:44.528Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/divine-shiksha {"projectId":"divine-shiksha","projectNumber":"82223462009","displayName":"divine-shiksha","name":"projects/divine-shiksha","resources":{"hostingSite":"divine-shiksha"},"state":"ACTIVE"}
+[debug] [2021-02-27T11:17:44.776Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:120:11)
+    at Object.join (path.js:375:7)
+    at Object.checkFunctionsSDKVersion [as fn] (C:\Users\Bhavik Arora\AppData\Roaming\npm\node_modules\firebase-tools\lib\checkFirebaseSDKVersion.js:34:28)
+    at C:\Users\Bhavik Arora\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:161:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
