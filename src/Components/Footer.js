@@ -10,7 +10,7 @@ function Footer() {
                             <div className="row">
                                 <div className="col-md-6 col-sm-6 info-left">
                                     <div className="logo-footer">
-                                        <a href="http://www.divineshiksha.com/"><img src={divinewhite} class="footimg" alt="image" /></a>
+                                        <a className="footimg" href="http://www.divineshiksha.com/"><img src={divinewhite} className="footimg" alt="image" /></a>
                                     </div>{/* logo-footer */}
                                     <ul className="flat-socials">
                                         <li><a href="https://www.facebook.com/Divine-Shiksha-102200091486191/" target="_blank"><i className="fa fa-facebook"></i></a></li>
