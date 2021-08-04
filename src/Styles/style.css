@@ -2419,7 +2419,7 @@ ol.comments-list {
 
 .logo-footer {
   margin-bottom: 3px;
-  margin-left: 110px;
+  /* margin-left: 110px; */
   padding-left: 16px;
   width: 350px;
   height: 350px;
@@ -2463,7 +2463,7 @@ ol.comments-list {
 
 .footer ul.flat-information {
   text-align: left;
-  padding: 32px 0px 0px 112px;
+  padding: 32px 0px 0px 42px;
 }
 
 .footer .flat-information li {

@@ -3,6 +3,8 @@ import React from "react";
 import Divine from "../images/Divine.png";
 import MenuIcon from "@material-ui/icons/Menu";
 import Modal from "react-modal";
+import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
+import {Button} from "@material-ui/core";
 
 const stylesByBhavik = {
   content: {
@@ -23,70 +25,15 @@ class Header extends React.Component {
   constructor() {
     super();
     this.state = {
-      isModalOpen: false,
+      isMModalOpen: false,
       menu: "",
     };
   }
-  cross = () => {
-    this.setState({
-      isModalOpen: false,
-    });
-  };
   render() {
-    const { isModalOpen } = this.state;
+    const { isMModalOpen } = this.state;
     return (
       <React.Fragment>
-        <Modal isOpen={isModalOpen} style={stylesByBhavik}>
-          <React.Fragment>
-            <p
-              onClick={this.cross}
-              className="cross"
-              style={{
-                float: "right",
-                color: "white",
-                "background-color": "#ffbf43",
-                width:"1rem"
-              }}
-            >
-              X
-            </p>
-            <br />
-            <ul className="menu">
-              <li style={{margin:".3rem"}}>
-                <a href="/" title="" style={{color: "white", textDecoration:"underline"}}>
-                  HOME
-                </a>
-              </li>
-              <li style={{margin:".3rem"}}>
-                <a href="/courses" title="" className="has-mega" style={{color: "white", textDecoration:"underline"}}>
-                  COURSES
-                </a>
-              </li>
-              <li style={{margin:".3rem"}}>
-                <a href="/about/speaker" title="" style={{color: "white", textDecoration:"underline"}}>
-                  THE SPEAKER
-                </a>
-              </li>
-              {/* <li><a href="http://localhost:3000/gallery" title="">GALLERY</a> */}
-              {/* </li> */}
-              <li style={{margin:".3rem"}}>
-                <a href="/donate" title="" style={{color: "white", textDecoration:"underline"}}>
-                  DONATE
-                </a>
-              </li>
-              <li style={{margin:".3rem"}}>
-                <a href="/vedicamp" title="" style={{color: "white", textDecoration:"underline"}}>
-                  SUMMER CAMP
-                </a>
-              </li>
-              <li style={{margin:".3rem"}}>
-                <a href="/contact" title="" style={{color: "white", textDecoration:"underline"}}>
-                  CONTACT
-                </a>
-              </li>
-            </ul>
-          </React.Fragment>
-        </Modal>
+       
         {/* Boxed */}
 
         <div className="wrap-header clearfix">
@@ -97,7 +44,7 @@ class Header extends React.Component {
                   <ul className="flat-information">
                     <li>
                       <span>Phone:</span>
-                      <a href=""> +91-9929-3698-44</a>
+                      <a href="tel:+919929369844"> +91-9929-3698-44</a>
                     </li>
                     <li>
                       <span>E-mail:</span>
@@ -118,10 +65,10 @@ class Header extends React.Component {
                           target="_blank"
                         >
                           <i className="fa fa-facebook"></i>
-                        </a>
+                       </a>
                       </li>
                       <li>
-                        <a href="" target="_blank">
+                        <a href="https://twitter.com/AtulyaNimai" target="_blank">
                           <i className="fa fa-twitter"></i>
                         </a>
                       </li>
@@ -135,7 +82,7 @@ class Header extends React.Component {
                       </li>
                       <li>
                         <a
-                          href="https://www.instagram.com/divine_shiksha/"
+                          href="https://www.instagram.com/coach.and/"
                           target="_blank"
                         >
                           <i className="fa fa-instagram"></i>
@@ -210,10 +157,108 @@ class Header extends React.Component {
                   {/*wrap-nav */}
 
                   <div className="mobile-nav">
-                    <MenuIcon
-                      onClick={() => this.setState({ isModalOpen: true })}
-                    />
+          {/* <MenuIcon onClick={() => setIsModalOpen(true)} /> */}
+          {["top"].map((anchor) => (
+            <React.Fragment key={anchor}>
+              {/* <Button onClick={() => setIsMModalOpen(true)}>{anchor}</Button> */}
+              <MenuIcon onClick={() => this.setState({isMModalOpen:true})} />
+              <SwipeableDrawer
+                anchor={anchor}
+                open={isMModalOpen}
+                onClose={() => this.setState({isMModalOpen:false})}
+              >
+                <div className="row" style={{ textAlign: "center" }}>
+                  <div
+                    className="col-lg col-md"
+                    style={{ paddingBottom: ".5rem", paddingTop: ".5rem" }}
+                  >
+                    <a
+                      href="/"
+                      className="text-gray-500 hover:no-underline hover:text-black"
+                      style={{ textDecoration: "none", color:"black" }}
+                    >
+                      HOME
+                    </a>
                   </div>
+
+                  <div
+                    className="col-lg col-md"
+                    style={{ paddingBottom: ".5rem" }}
+                  >
+                    <a
+                      href="/courses"
+                      className="text-gray-500 hover:no-underline hover:text-black"
+                      style={{ textDecoration: "none", color:"black" }}
+                    >
+                      COURSES
+                    </a>
+                  </div>
+                  <div
+                    className="col-lg col-md"
+                    style={{ paddingBottom: ".5rem" }}
+                  >
+                    <a
+                      href="/about/speaker"
+                      className="text-gray-500 hover:no-underline hover:text-black"
+                      style={{ textDecoration: "none", color:"black" }}
+                    >
+                      THE SPEAKER
+                    </a>
+                  </div>
+                  <div
+                    className="col-lg col-md"
+                    style={{ paddingBottom: ".5rem" }}
+                  >
+                    <a
+                      href="/donate"
+                      className="text-gray-500 hover:no-underline hover:text-black"
+                      style={{ textDecoration: "none", color:"black" }}
+                    >
+                      DONATE
+                    </a>
+                  </div>
+                  <div
+                    className="col-lg col-md"
+                    style={{ paddingBottom: ".5rem" }}
+                  >
+                    <a
+                      href="/vedicamp"
+                      className="text-gray-500 hover:no-underline hover:text-black"
+                      style={{ textDecoration: "none", color:"black" }}
+                    >
+                      SUMMER CAMP
+                    </a>
+                  </div>
+                  <div
+                    className="col-lg col-md"
+                    style={{ paddingBottom: ".5rem" }}
+                  >
+                    <a
+                      href="/contact"
+                      className="text-gray-500 hover:no-underline hover:text-black"
+                      style={{ textDecoration: "none", color:"black" }}
+                    >
+                      CONTACT US
+                    </a>
+                  </div>
+                  <Button
+                    style={{
+                      width: "100%",
+                      backgroundColor: "gray",
+                      height: "2.5rem",
+                      fontSize: "1.2rem",
+                      color: "white",
+                    }}
+                    onClick={() => this.setState({isMModalOpen:false})}
+                  >
+                    Close
+                  </Button>
+                  {/* <Button onClick={() => setIsMModalOpen(false)}>Close</Button> */}
+                </div>
+              </SwipeableDrawer>
+            </React.Fragment>
+          ))}
+        </div>
                 </div>
                 {/* /col-md-12 */}
               </div>

@@ -2,13 +2,13 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAXzSqyEey5J6cR0AwD2BRJyvYOcnHg57s",
-  authDomain: "divine-shiksha-a3b8c.firebaseapp.com",
-  projectId: "divine-shiksha-a3b8c",
-  storageBucket: "divine-shiksha-a3b8c.appspot.com",
-  messagingSenderId: "162275890562",
-  appId: "1:162275890562:web:a0fc9d48b3e8fa6a99eb9b",
-  measurementId: "G-E17BKKZF9P",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
 let app;
