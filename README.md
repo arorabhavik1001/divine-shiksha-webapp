@@ -10,3 +10,5 @@ This is a production web app for a spiritual institute (Divine Shiksha), with fr
 6) Use of animations
 7) Hamburger Menu using Material-UI
 9) Deployed on Firebase Hosting.
+
+Checkout the app at - www.divineshiksha.com
